@@ -5,7 +5,7 @@ TestDevise::Application.routes.draw do
     :path => 'users', :path_names => { :sign_in => 'login',
     :sign_out => 'logout', :confirmation => 'verification', :sign_up => 'register' }
 
-  resources :home, :only => :index
+  resources :home
   root :to => 'home#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
